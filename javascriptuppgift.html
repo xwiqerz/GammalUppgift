@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<link href="javascriptuppgiftstilmall.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>Namnlöst dokument</title>
+</head>
+
+<body>
+
+        <input type="text" id="number">
+        <input type="button" value="skriv ut nummret" onclick="myFunction()">
+        <p id="demo"></p>
+    <script>
+			function myFunction() {
+			var num = document.getElementById("number").value;
+		    var res = "";
+    		res = res + isNaN(num);
+			if (res != "true" && num != "") {
+				document.getElementById("demo").innerHTML = "ditt nummer är " + num;
+				}
+				else 
+					document.getElementById("demo").innerHTML = "det måste vara ett nummer ";
+			}
+	</script>
+
+
+</body>
+</html>
